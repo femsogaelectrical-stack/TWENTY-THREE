@@ -1,0 +1,6 @@
+{
+  "name": "23 Restaurant & Lounge",
+  "description": "Experience the art of upscale fine dining and high-end nightlife. Premium culinary designs, signature custom cocktails, and a vibrant loung-and-dance social atmosphere.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

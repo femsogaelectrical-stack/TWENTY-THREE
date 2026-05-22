@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,650;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  
+  --color-gold-50: #fcfbf7;
+  --color-gold-100: #f4ebd6;
+  --color-gold-200: #e8d7ae;
+  --color-gold-300: #dcbe81;
+  --color-gold-400: #cfa15b;
+  --color-gold-500: #C5A059; /* Precise Gold of Sophisticated Dark Theme */
+  --color-gold-600: #ab853d;
+  --color-gold-700: #8c682b;
+  --color-gold-800: #6d5022;
+  --color-gold-900: #543e1c;
+  --color-gold-950: #2f210d;
+}
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #F4EBD6 0%, #C5A059 50%, #8c682b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #dcbe81 0%, #C5A059 50%, #ab853d 100%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #050505; /* Matte black */
+  color: #F2F2F2; /* Sophisticated white/light gray */
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
